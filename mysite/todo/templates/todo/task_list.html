@@ -7,9 +7,15 @@
         <div class="col-md-6 my-col rounded">
             <h1 class="text-center my-text mt-2">ToDo App</h1>
             <div class="row justify-content-center mt-3">
-                <form class="col-md-12 mx-auto">
+
+
+                <form action='/' method="POST" class="col-md-12 mx-auto">
                     <div class="input-group">
-                        <input id="task-input" type="text" class="rounded form-control" placeholder="Enter a task...">
+                        {% csrf_token %}
+                        {{ form }}
+
+
+<!--                        <input id="task-input" type="text" class="rounded form-control" placeholder="Enter a task...">-->
                         <button class="btn submit-btn">Submit</button>
                     </div>
                 </form>
@@ -17,20 +23,19 @@
             <div class="row justify-content-center mt-4">
                 <table class="table table-borderless ">
                     {% for task in tasks %}
-                        <tr class="my-tr">
-                            <td class="my-text">{{ task.title }}</td>
-                            <td class="d-flex mr-1 justify-content-end">
-                                <button class="btn delete-btn mr-1">-</button>
-                                <button class="btn update-btn">Edit</button>
-                            </td>
-                        </tr>
+                    <tr class="my-tr">
+                        <td class="my-text">{{ task.title }}</td>
+                        <td class="d-flex mr-1 justify-content-end">
+                            <button class="btn delete-btn mr-1">-</button>
+                            <button class="btn update-btn">Edit</button>
+                        </td>
+                    </tr>
                     {% endfor %}
                 </table>
             </div>
         </div>
     </div>
 </div>
-
 
 
 {% endblock %}
