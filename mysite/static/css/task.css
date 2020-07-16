@@ -21,3 +21,32 @@ body {
     color: #EEEEEE;
 }
 
+.delete-btn {
+    background-color: #FF652F;
+    color: #FFFFFF;
+}
+
+.delete-btn:hover {
+    background-color: #EE541E;
+    color: #EEEEEE;
+}
+
+.update-btn {
+    background-color: #FFE400;
+    color: #222222;
+}
+
+.update-btn:hover {
+    background-color: #DDC200;
+    color: #111111;
+
+}
+
+.my-tr {
+    border-color: #747474;
+}
+
+.my-tr:hover {
+    background-color: #232323;
+}
+
