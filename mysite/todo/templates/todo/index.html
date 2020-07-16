@@ -23,9 +23,9 @@
                     <tr class="my-tr">
 
                         {% if task.completed %}
-                        <td class="my-text"><s><a href="#">{{ task.title }}</a></s><td>
+                        <td class="my-text"><s><a href="{% url 'task_completed' task.id %}">{{ task.title }}</a></s><td>
                         {% else %}
-                            <td class="my-text">{{ task.title }}<td>
+                        <td class="my-text"><a href="{% url 'task_completed' task.id %}">{{ task.title }}</a><td>
                         {% endif %}
 
                         <td class="d-flex mr-1 justify-content-end">

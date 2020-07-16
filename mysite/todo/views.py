@@ -28,7 +28,7 @@ def task_update(request, pk):
 
 def task_completed(request, pk):
     task = Task.objects.get(id=pk)
-    task.completed = ~task.completed
+    task.completed = not task.completed
     task.save()
 
     return redirect('/')
