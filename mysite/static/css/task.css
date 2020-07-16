@@ -3,6 +3,7 @@ body {
 }
 .my-text {
     color: #747474;
+    cursor: default;
 }
 .my-col {
     background-color: #272727;
@@ -48,5 +49,9 @@ body {
 
 .my-tr:hover {
     background-color: #232323;
+}
+
+a {
+    text-decoration: none;
 }
 
