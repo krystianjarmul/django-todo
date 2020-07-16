@@ -1,0 +1,23 @@
+body {
+    background-color: #161616;
+}
+.my-text {
+    color: #747474;
+}
+.my-col {
+    background-color: #272727;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.submit-btn {
+    background-color: #14A76C;
+    color: #FFFFFF;
+}
+
+.submit-btn:hover {
+    background-color: #13865B;
+    color: #EEEEEE;
+}
+

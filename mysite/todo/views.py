@@ -1,4 +1,4 @@
 from django.shortcuts import render
 
-def index(request):
-    return render(request, 'todo/index.html')
+def task_list(request):
+    return render(request, 'todo/task_list.html')
