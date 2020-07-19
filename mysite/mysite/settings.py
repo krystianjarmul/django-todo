@@ -73,29 +73,29 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'todo',
-        'USER': 'krystianjarmul',
-        'PASSWORD': 'todo1234',
-        'HOST': 'todo-db.cw5kms9fqrsi.eu-central-1.rds.amazonaws.com',
-        'PORT': '5432',
-    },
-
-}
-
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'DEMO_TEST',
-#         'USER': 'postgres',
-#         'PASSWORD': 'postgres',
-#         'HOST': 'localhost',
+#         'NAME': 'todo',
+#         'USER': 'krystianjarmul',
+#         'PASSWORD': 'todo1234',
+#         'HOST': 'todo-db.cw5kms9fqrsi.eu-central-1.rds.amazonaws.com',
 #         'PORT': '5432',
 #     },
 #
 # }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'DEMO_TEST',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    },
+
+}
 
 if 'test' in sys.argv:
     DATABASES['default'] = {
