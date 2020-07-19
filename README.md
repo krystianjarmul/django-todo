@@ -22,7 +22,7 @@ git clone https://github.com/krystianjarmul/django-todo.git
 Go to project directory 
 
 ```
-cd mysite
+cd django-todo/mysite
 ```
 Then use docker-compose to build & run project
 ```
