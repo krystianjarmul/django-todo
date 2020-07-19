@@ -1,5 +1,5 @@
 # To-Do App
-
+<img src="https://github.com/krystianjarmul/django-todo/blob/develop/todoapp.PNG"></img>
 ## Description
 To-Do App is simple web application that allows you to create, edit and delete tasks. 
 
