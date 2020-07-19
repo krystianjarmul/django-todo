@@ -12,9 +12,12 @@ def task_list(request: HttpRequest) -> HttpResponse:
     form = TaskForm()
 
     if request.method == "POST":
+
         form = TaskForm(request.POST)
+
         if form.is_valid():
             form.save()
+
             return redirect('/')
 
     return render(request, 'todo/task_list.html', {'tasks': tasks, 'form': form})
